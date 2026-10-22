@@ -1,0 +1,26 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=3600" }
+      ]
+    },
+    {
+      "source": "/wp-content/uploads/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=86400" }
+      ]
+    }
+  ],
+  "rewrites": [
+    { "source": "/contactez-nous", "destination": "/contactez-nous/index.html" },
+    { "source": "/qui-sommes-nous", "destination": "/qui-sommes-nous/index.html" },
+    { "source": "/notre-vision-de-la-rse", "destination": "/notre-vision-de-la-rse/index.html" },
+    { "source": "/chiffres-cles", "destination": "/chiffres-cles/index.html" },
+    { "source": "/nos-racines", "destination": "/nos-racines/index.html" },
+    { "source": "/organisationdlt", "destination": "/organisationdlt/index.html" }
+  ]
+}

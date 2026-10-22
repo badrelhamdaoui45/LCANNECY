@@ -1,0 +1,181 @@
+/*
+Theme Name: DLT
+Template: Divi
+Version: 1.0
+*/
+
+@font-face {
+  font-family: "Laughing Font";
+  src: url("fonts/LaughingFont-Bold.woff2.html") format("woff2"),
+       url("fonts/LaughingFont-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham Medium";
+  src: url("fonts/GothamMedium.woff2.html") format("woff2"),
+       url("fonts/GothamMedium.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* =========================
+   TITRES – Laughing
+   ========================= */
+h1,
+h2,
+h3,
+.et_pb_text h1,
+.et_pb_text h2,
+.et_pb_text h3,
+.entry-content h1,
+.entry-content h2,
+.entry-content h3 {
+  font-family: "Laughing Font", sans-serif;
+  font-weight: 700;
+}
+
+/* =========================
+   PARAGRAPHES – Acumin
+   ========================= */
+p,
+.et_pb_text p,
+.entry-content p,
+.et_pb_post_content p, 
+.et-menu-nav,
+.et_pb_menu .et_pb_menu__menu,
+#page-container .et_pb_section .et_pb_button,
+#page-container .et_pb_section .et_pb_button_0_tb_header {
+  font-family: "Gotham Medium", sans-serif;
+}
+
+
+/* =========================
+   EXCEPTION volontaire
+   ========================= */
+body .et_pb_text.laughing-font p,
+body .laughing-font p,
+body p.laughing-font {
+  font-family: "Laughing Font", sans-serif;
+  font-weight: 700;
+}
+
+/* =========================
+   BULLES SVG – BACKGROUND
+   ========================= */
+
+.bg-bulle-1 {
+  background-image: url("SVG/bulle1-DLT.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.bg-bulle-2 {
+  background-image: url("SVG/bulle1-DLT2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.bg-bulle-3 {
+  background-image: url("SVG/bulle1-DLT3.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.bg-bulle-1b {
+  background-image: url("SVG/bulle1-DLT-brun.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.bg-bulle-2b {
+  background-image: url("SVG/bulle1-DLT2-brun.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.bg-bulle-3b {
+  background-image: url("SVG/bulle1-DLT3-brun.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.et_pb_menu--style-centered .et_pb_menu__wrap {
+  justify-content: right;
+}
+
+/* =========================
+   ADAPTATION MOBILE BULLES
+   ========================= */
+
+@media (max-width: 980px) {
+
+  .bg-bulle-1,
+  .bg-bulle-2,
+  .bg-bulle-3,
+  .bg-bulle-1b,
+  .bg-bulle-2b,
+  .bg-bulle-3b {
+    background-size: 80%;
+  }
+
+}
+
+/* =========================
+   BOUTONS – SVG BG (GLOBAL)
+   ========================= */
+
+#page-container .et_pb_button {
+  background-image: url("SVG/btn-brun-position1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /* ou contain selon ton SVG */
+  border: 0;
+}
+
+/* Hover */
+#page-container .et_pb_button:hover,
+#page-container .et_pb_button:focus {
+  background-image: url("SVG/btn-brun-position2.svg");
+}
+
+.et_pb_bg_layout_dark .et_pb_slide_description {
+text-shadow: none;
+}
+
+/* =========================
+   LISTES – PUCES DLT
+   ========================= */
+
+.et_pb_text ul {
+  list-style: none;
+  padding-left: 1.5em;
+}
+
+.et_pb_text ul li {
+  position: relative;
+  padding-left: 1.2em;
+line-height: 1.8em;
+}
+
+.et_pb_text ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 12px;
+  height: 12px;
+
+  background-image: url("SVG/puce-DLT.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
